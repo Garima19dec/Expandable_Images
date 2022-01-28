@@ -1,0 +1,85 @@
+.wrapper {
+	height: 50vh;
+	max-width: 75rem;
+	margin: 20px auto;
+	display: flex;
+}
+
+.column {
+	margin: 0 5px;
+	border-radius: 10px;
+}
+
+.wrapper .column {
+	padding: 1rem;
+	transition: width 2s ease-in-out;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.wrapper .column:hover {
+	-webkit-flex-basis: 40%;
+	-ms-flex-preferred-size: 40%;
+	flex-basis: 40%;
+}
+
+.wrapper .column:hover .content {
+	opacity: 1;
+}
+
+.wrapper .content {
+	color: #fefefe;
+	font-weight: bold;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 39.9375em) {
+	.wrapper {
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+.wrapper .column:nth-of-type(1) {
+	background: url("https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+		center center no-repeat;
+	height: 100vh;
+	background-size: cover;
+}
+
+.wrapper .column:nth-of-type(2) {
+	background: url("https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+		center center no-repeat;
+	height: 100vh;
+	background-size: cover;
+}
+
+.wrapper .column:nth-of-type(3) {
+	background: url("https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+		center center no-repeat;
+	height: 100vh;
+	background-size: cover;
+}
+
+.wrapper .column:nth-of-type(4) {
+	background: url("https://images.pexels.com/photos/3361746/pexels-photo-3361746.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+		center center no-repeat;
+	height: 100vh;
+	background-size: cover;
+}
+
+.wrapper .column:nth-of-type(5) {
+	background: url("https://images.pexels.com/photos/825947/pexels-photo-825947.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+		center center no-repeat;
+	height: 100vh;
+	background-size: cover;
+}
